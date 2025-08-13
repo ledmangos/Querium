@@ -2,6 +2,26 @@
 
 Querium is a lightweight in-memory collection with multi-key equality, range, composite, and prefix indexes, offering fast lookups, flexible queries, and snapshot/persistence support without an external database.
 
+## Why Not Just Use JavaScript's .find()?
+
+JavaScript's built-in `.find()` method is great for simple lookups, but it has significant limitations:
+
+- **Performance**: `.find()` scans the entire array sequentially - O(n) complexity
+- **No indexing**: Every query requires a full array scan, even for repeated searches
+- **Limited queries**: Only supports simple equality checks, no range or prefix searches
+- **Memory inefficiency**: No optimization for frequently accessed data
+- **Scalability issues**: Performance degrades linearly as data grows
+
+## Why Querium?
+
+Querium solves these problems by providing:
+
+- **Fast lookups**: O(1) average case for equality queries, O(log n) for ranges
+- **Smart indexing**: Automatically maintains indexes for instant access
+- **Advanced queries**: Support for range, prefix, and composite key searches
+- **Memory optimization**: Efficient data structures for large datasets
+- **Snapshot system**: Built-in state management for complex operations
+
 ## Features
 
 - **Multi-key indexes**: Support for equality, range, and prefix indexes
