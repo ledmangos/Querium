@@ -8,5 +8,8 @@ module.exports = {
     '@semantic-release/git',
     '@semantic-release/github'
   ],
-  repositoryUrl: 'https://github.com/ledmangos/querium.git'
+  repositoryUrl: 'https://github.com/ledmangos/querium.git',
+  git: {
+    message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}'
+  }
 };
