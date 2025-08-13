@@ -9,6 +9,9 @@ module.exports = {
     '@semantic-release/github'
   ],
   repositoryUrl: 'https://github.com/ledmangos/querium.git',
+  npm: {
+    publish: true
+  },
   git: {
     message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}'
   }
