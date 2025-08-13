@@ -1,6 +1,6 @@
 {
   "name": "querium",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Querium is a lightweight in-memory collection with multi-key equality, range, composite, and prefix indexes, offering fast lookups, flexible queries, and snapshot/persistence support without an external database.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
