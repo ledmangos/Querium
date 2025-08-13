@@ -10,7 +10,8 @@ module.exports = {
   ],
   repositoryUrl: 'https://github.com/ledmangos/querium.git',
   npm: {
-    publish: true
+    publish: true,
+    access: "public"
   },
   git: {
     message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}'
