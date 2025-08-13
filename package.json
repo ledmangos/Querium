@@ -1,6 +1,6 @@
 {
   "name": "querium",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Querium is a lightweight in-memory collection with multi-key equality, range, composite, and prefix indexes, offering fast lookups, flexible queries, and snapshot/persistence support without an external database.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -26,7 +26,8 @@
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix",
     "clean": "rimraf dist",
-    "prepublishOnly": "npm run clean && npm run build"
+    "prepublishOnly": "npm run clean && npm run build",
+    "release": "semantic-release"
   },
   "keywords": [
     "query",
@@ -46,6 +47,10 @@
   },
   "homepage": "https://github.com/ledmangos/querium#readme",
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.4",
+    "@semantic-release/npm": "^12.0.2",
     "@types/jest": "^29.5.5",
     "@types/node": "^20.8.0",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
@@ -53,6 +58,7 @@
     "eslint": "^8.51.0",
     "jest": "^29.7.0",
     "rimraf": "^5.0.5",
+    "semantic-release": "^24.2.7",
     "ts-jest": "^29.1.1",
     "typescript": "^5.2.2"
   },
